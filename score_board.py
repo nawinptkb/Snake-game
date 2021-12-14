@@ -10,7 +10,7 @@ class Score_Board(Turtle):
                 self.score = 0
 
                 #with keyword allows the file not to be closed after being done with the editing; python will save the file to the persistent storage itself.
-                with open('score_data.txt', mode='r') as score_data:
+                with open('/Users/nawinptkb/OneDrive - KMITL/KMITL-NIDA/Financial Engineering Freshmen/Semester 1/Intro To Programming/Python Project/Snake game/score_data.txt', mode='r') as score_data:
                         self.high_score = int(score_data.read()) #read the highscore from the score_data.txt and then assign it to the current highscore everytime the game runs
                 
                 self.color('white')
