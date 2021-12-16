@@ -30,7 +30,7 @@ class Score_Board(Turtle):
         def reset_scoreboard(self):
                 if self.score > self.high_score:
                         self.high_score = self.score #When the current score is higher than the current high score. The high score will be replaced with the current score
-                        with open('score_data.txt',mode='w') as score_data:
+                        with open('/Users/nawinptkb/OneDrive - KMITL/KMITL-NIDA/Financial Engineering Freshmen/Semester 1/Intro To Programming/Python Project/Snake game/score_data.txt',mode='w') as score_data:
                                 score_data.write(str(self.high_score)) #Overwrite the old highscore in score_data.txt
 
                 self.score = 0 #Set the current the score back to "0" everytime the reset_scoreboard() method is being called.
